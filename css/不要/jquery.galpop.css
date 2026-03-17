@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+/*index*/
+#galpop-wrapper {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, .8);
+}
+#galpop-container {
+  border-radius:5px;
+  padding:10px;
+  background-color:rgb(255, 255, 255);
+  background-color:rgba(255, 255, 255, .8);
+
+}
+#galpop-wrapper.loaded-iframe #galpop-container {
+  width:95vw;
+  height:100vh;
+  padding:0;
+  border-radius:0;
+}
+#galpop-wrapper.loaded-iframe iframe {
+  width:95vw;
+  height:100vh;
+  border:0;
+}
+
+#galpop-info {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, .8);
+  font-size:.8em;
+  padding:10px;
+  left:0;
+  bottom:0;
+}
+#galpop-close {
+  top:0px;
+  right:-35px;
+  width:36px;
+  height:36px;
+  background-image:url("../images/btn-close.png");
+  background-repeat:no-repeat;
+}
+
+/* Important to the slider! Be careful when changing these values! */
+
+.lock-scroll {
+  overflow: hidden !important;
+}
+#galpop-wrapper {
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:100;
+}
+#galpop-container {
+  position:absolute;
+  top:50%;
+  left:50%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height:100px;
+  width:100px;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -o-transition: width 0.5s, height 0.5s;
+  -ms-transition: width 0.5s, height 0.5s;
+  -moz-transition: width 0.5s, height 0.5s;
+  -webkit-transition: width 0.5s, height 0.5s;
+  transition:width 0.5s, height 0.5s;
+  overflow: visible !important;
+}
+#galpop-close {
+  position:absolute;
+  display:block;
+  z-index:10;
+}
